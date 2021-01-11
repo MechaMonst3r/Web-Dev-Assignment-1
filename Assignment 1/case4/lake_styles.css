@@ -1,0 +1,175 @@
+﻿@charset "utf-8";
+@font-face{
+           font-family: cac_champagne;
+           src: url('cac_champagne.woff') format('woff'),
+                url('cac_champagne.ttf') format('truetype');
+          }
+
+@font-face{
+           font-family: DobkinPlain;
+           src: url('DobkinPlain.woff') format('woff'),
+                url('DobkinPlain.ttf') format('truetype');			  
+          }		  
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Lukas Bowden (T00040951)
+   Last Update: 2019-09-20   
+   Filename: lake_styles.css
+*/
+
+
+/*HTML and Body Styles*/
+html{
+	 background-color: hsl(50, 100%, 39%); 
+     font-family: Verdena, Geneva, sans-serif;	 
+    }
+	
+body{
+	  color: black;
+	  background-color: rgb(222, 227, 176);
+    }
+
+/*Heading Styles*/
+h1, h2{
+	   font-family: cac_champagne, DobkinPlain, Verdena, Geneva, sans-serif;
+      }
+	  
+h1{
+	color: black;
+  }
+
+h2{
+	color: black;
+  }
+  
+
+/*Left Column and Aside styles*/
+section#leftcol{
+	            margin-right: 0px;
+			    padding-right: 0px;
+               }
+			   
+section#leftcol h1{
+	               font-size: 4em;
+				   padding-left: 15px;
+				   padding-right: 10px;
+				   margin-top: 10px;
+				   margin-bottom: 10px;
+                  }
+					
+section#leftcol p{
+	              padding-left: 17px;
+				  line-height: 1.2em;
+				  font-family: Geneva;
+				  font-size: 1.1em;
+                 }					
+					
+section#leftcol aside{
+	                  background-color: rgb(219, 128, 0);
+	                  font-size: 1.2em
+                     }
+
+section#leftcol aside > h1{
+	                       font-size: 1.5em; 
+						   font-family: Geneva;
+                           text-align: center;
+						   margin-bottom: 10px;
+						   margin-top: 10px;
+                          }
+
+section#leftcol aside > h2{
+	                       font-family: Verdena;
+						   font-size: 1em;
+						   padding-left: 5px;
+						   padding-bottom: 0px;
+						   margin-bottom: 1px;
+                          }							
+							
+section#leftcol aside > p{
+	                      font-size: 0.8em; 
+						  line-height: 1.2em;
+						  padding-left: 10px;
+						  padding-right: 10px;							  
+                         }	
+
+section#leftcol aside > ul > li{
+	                            font-size: 0.8em;
+								line-height: 1.5em;
+								list-style-type: circle;
+                               }
+								 
+
+/*Right Column and Blockquote Styles*/	
+section#rightcol{
+                 background-color: rgba(168, 141, 200, 0.9);
+				 margin-top: 30px;
+                }
+				
+section#rightcol nav > h2{
+	                      font-size: 1.8em;
+						  color: rgba(0, 0, 0, 0.6);
+						  padding-left: 20px;
+						  padding-bottom: -10px;
+                         }	
+
+section#rightcol nav > ul{
+	                      color: rgba(255, 255, 255, 0.4);
+						  list-style-type: none;
+                         }		
+						 
+section#rightcol blockquote{
+	                        margin-top: 100px;
+	                        margin-bottom: 100px;
+							line-height: 1.3em;
+							font-family: Geneva;
+							font-size: 1.1em;
+							color: rgba(54, 0, 112, 0.91);
+                           }
+
+section#rightcol blockquote::before{
+	                                content: open-quote;
+									font-family: Geneva;
+									font-size: 1.5em;
+									font-weight: bold;
+                                   }	
+
+section#rightcol blockquote::after{
+	                               content: close-quote;
+								   font-family: Geneva;
+								   font-size: 1.5em;
+								   font-weight: bold;
+                                  }								   
+
+/*Navigation Styles*/
+header nav > ul{
+	            background-color: rgb(56, 17, 75);
+				font-size: 1.2em;
+				font-family: Geneva;
+				line-height: 2em;
+				list-style-type: none;
+				padding-bottom: 10px;
+               }
+				 
+nav ul > li > a:link, nav > ul > li > a:visited{
+	                                            color: rgba(255,255,255, 0.7);
+	                                            text-decoration: none;
+                                               }
+
+nav > ul > li > a:hover, nav > ul > li > a:active{
+	                                              color: rgb(0, 74, 235);
+	                                              text-decoration: underline;
+                                                 }											   
+				
+/*Footer Styles*/
+body footer{
+	        background-color: rgb(31, 25, 15);
+			color: rgba(255, 255, 255, 0.8);
+			font: normal small-caps bold 0.9em/3em Geneva, sans-serif;
+			text-align: center;
+           }
+			 
